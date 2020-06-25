@@ -1,0 +1,24 @@
+{
+  "name": "curso-node-testes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/** test/** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardohssena/curso-node-testes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardohssena/curso-node-testes/issues"
+  },
+  "homepage": "https://github.com/leonardohssena/curso-node-testes#readme",
+  "devDependencies": {
+    "eslint": "^7.3.1"
+  }
+}
