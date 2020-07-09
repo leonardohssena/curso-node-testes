@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "babel-node src/server.js",
     "test": "jest --verbose=true",
     "lint": "eslint src/** test/** --fix",
     "secure-mode": "jest --watch --verbose=true"
@@ -21,7 +21,14 @@
   },
   "homepage": "https://github.com/leonardohssena/curso-node-testes#readme",
   "devDependencies": {
-    "eslint": "^7.3.1",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "jest": "^26.1.0",
     "supertest": "^4.0.2"
   },
