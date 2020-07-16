@@ -1,9 +1,11 @@
 import express from 'express'
-import bodyParser from 'body-parser'
+import consign from 'consign'
 
 const app = express()
 
-app.use(bodyParser.json())
+consign({ cwd: 'src' })
+  .include('./config/middlewares.js')
+  .into(app)
 
 app.get('/', (req, res) => {
   res.status(200).send()
@@ -20,4 +22,4 @@ app.post('/users', (req, res) => {
   res.status(201).json(req.body)
 })
 
-module.exports = app
+export default app
