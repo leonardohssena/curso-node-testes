@@ -3,7 +3,7 @@ import consign from 'consign'
 
 const app = express()
 
-consign({ cwd: 'src' })
+consign({ cwd: 'src', verbose: false })
   .include('./config/middlewares.js')
   .into(app)
 

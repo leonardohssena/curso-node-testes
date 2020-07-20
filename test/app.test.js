@@ -1,6 +1,6 @@
 import request from 'supertest'
 
-const app = require('../src/app')
+import app from '../src/app'
 
 test('Deve responder na raiz', async () => {
   const res = await request(app).get('/')
